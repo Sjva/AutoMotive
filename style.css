@@ -1,0 +1,403 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(fonts/Montserrat-Bold.otf);
+}
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(fonts/Montserrat-Regular.otf);
+}
+@font-face {
+    font-family: PTSerif-Regular;
+    src: url(fonts/PTSerif-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: PTSerif-Regular, Helvetica, serif;
+}
+header {
+    background:#d12e1f url(img/bg-header.png)no-repeat ;
+    background-size: 100%;
+    padding: 0 10px 0 10px;
+}
+#menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4% 7% 10% 8%;
+}
+.header__logo{
+    margin-right: 25%;
+    text-align: center;
+}
+.header__menu{
+    font-family: Montserrat-Regular, Helvetica, sans-serif;
+    display: flex;
+    flex:1 1 auto;
+    justify-content: space-around;
+    list-style: none;
+}
+.header__menu li{
+    margin: 1% ;
+}
+.header__menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding:4px 12px 2px 12px;
+}
+.header__menu li a:hover{
+    background: url(img/bg_btn_menu.jpg) repeat-x 0 0;
+    border-radius: 4px;
+}
+#header__slogan{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#header__slogan h1{
+    font-family: Montserrat-Bold, Helvetica, sans-serif;
+    font-size: 80px;
+}
+.header__slogan--column{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    flex-wrap: wrap;
+}
+.header__slogan--column p{
+    margin-top: 5%;
+    font-size: 18px;
+}
+.header__slogan--color{
+    margin-bottom: -10%;
+    color:#130e27;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:27%;
+    height: auto;
+    background-color: white;
+    padding: 2% 3.5% 1% 1%;
+    border-radius: 5px;
+    margin-bottom:-6.5%;
+    box-shadow: 0 9px 69px rgba(0, 0, 0, 0.64);
+}
+form h3{
+    text-align: center;
+    padding-bottom: 8%;
+}
+form input{
+    width:100%;
+    height: 60px;
+    font-size: 16px;
+    padding-left:3%;
+    margin: 3%;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    border: none;
+}
+form p{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    margin: 3% 0 3% 0;
+    color:#130e27;
+}
+form p input{
+    width:15px;
+    height: 15px;
+    border-radius: 3px;
+    background-color:#eeeeee ;
+    border: none;
+    margin: 1.5% 0 0 -4%;
+}
+.header__btn_send{
+    background-color: #c62314;
+    color: white;
+}
+.header__btn_send:hover{
+    background-color: #9a1408;
+    color:#b5b5b5;
+}
+
+
+#services{
+    background-color: #ffffff;
+}
+.services__current{
+    font-family: Montserrat-Bold, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 36px;
+    color:#130e27;
+    margin: 3% 0 10% 9%;
+}
+.services__current--red{
+    margin-right: 2%;
+    color:red;
+}
+.services__img{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 4% 3% 4%;
+}
+.services__img_text{
+    display: flex;
+    flex-direction: column;
+}
+.services__img_text p{
+    margin-top: 30%;
+}
+#story{
+    background-color:#130e27;
+    color:#ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:2%;
+    font-size: 20px;
+}
+#story a{
+    font-family: Montserrat-Regular, Helvetica, sans-serif;
+    background-color: #c62314;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 1.4% 5.2% 1.4% 5.2%;
+    border-radius: 2px;
+    color: #ffffff;
+}
+#story a:hover{
+    background-color: #9a1408;
+    color:#b5b5b5;
+}
+
+#prising{
+    background-color: #efefef;
+}
+#prising h1{
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat-Bold, Helvetica, sans-serif;
+    font-size: 50px;
+    color:#130e27;
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+.prising__all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 12%;
+}
+.prising__all_field{
+    height: 380px;
+    width: 320px;
+    background-color: #ffffff;
+    margin: 2% 1.7% 0 0;
+}
+.prising__all_field:last-child{
+    margin-right: 0 ;
+}
+.prising__all_field ul{
+    padding-top: 10%;
+}
+.prising__all li{
+    text-align: center;
+    background-color: #ffffff;
+    list-style: none;
+    font-size: 18px;
+    padding-top:2.5%;
+}
+.prising__all li h2 {
+    font-family: Montserrat-Bold, Helvetica, sans-serif;
+    font-size: 50px;
+    color:#c62314;
+}
+.prising__all_btn{
+    width:100%;
+    background-color:#130e27;
+    padding: 4% 21% 4% 21%;
+    color:white;
+    border-radius: 4px;
+    text-decoration:none;
+}
+.prising__all_btn:hover{
+    background-color: #9a1408;
+}
+.prising__all_btn--red{
+    background-color: #c62314;;
+}
+.prising__all_btn--width{
+    padding: 4% 26.5% 4% 26.5%;
+}
+.prising__all_field ul li:last-child {
+     margin-top: 10%;
+}
+.prising__all_field ul li:first-child {
+    margin-bottom: 5%;
+}
+.prising__business li i{
+    display: flex;
+    font-size: 14px;
+    margin: -12.5% 0;
+    opacity: 0.9;
+    width: 0;
+    height: 0;
+    border-top: 82px solid #c62314;
+    border-right: 82px solid transparent;
+}
+.prising__business li i em{
+    position:absolute;
+    transform: rotate(-45deg);
+    margin: -4.5% 0 0 0.5%;
+}
+
+
+#galary{
+    font-family: PTSerif-Regular, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10% 0 10% 0;
+    font-size: 20px;
+}
+#galary h1{
+    font-family: Montserrat-Bold, Helvetica, sans-serif;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+#galary h5{
+    font-family: Montserrat-Regular, Helvetica, sans-serif;
+}
+#galary img{
+    border-radius: 50%;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.64);
+}
+.galary__testimonial{
+    margin-right:4% ;
+}
+.galary__testimonial_first {
+    display: flex;
+    justify-content: space-around;
+    margin:5% 0 5% 0;
+    color:#130e27;
+    background-color: #ffffff;
+    padding: 3% 0 2% 1%;
+}
+.galary__testimonial_first p{
+    margin-bottom: 5%;
+}
+.testimonial__foto{
+   margin-left: 50%;
+}
+.galary__testimonial_second{
+    display: flex;
+    justify-content: space-between;
+    background-color: #efefef;
+    border-radius: 5px;
+    padding: 3% 0 2% 1%;
+}
+.galary__testimonial_second p{
+    color:#c62314;
+}
+.galary__foto {
+    max-width: 400px;
+    text-align: center;
+}
+.galary__foto h1{
+    color:#c62314;
+}
+.galary__pictures{
+    border-radius: 50%;
+    margin: 4% 3% 0;
+}
+.galary__foto--more{
+    font-family: Montserrat-Regular, Helvetica, sans-serif;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    color:#130e27;
+}
+.galary__foto--more:hover{
+    color:#c62314;
+}
+
+footer{
+    background-color: #130e27;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4% 1% 4% 2%;
+    color:#ffffff;
+    font-size: 20px;
+}
+footer span{
+    font-family: PTSerif-Regular, Helvetica, sans-serif;
+    color:#c62314;
+}
+
+@media (max-width: 1199px) and (min-width: 320px) {
+    .header__logo {
+        margin-right: 0;}
+    form p input{
+        margin: 1.5% 0 0 5%; }
+}
+@media (max-width: 992px) and (min-width: 320px){
+    .prising__business li i em{
+        margin-top: -6%;  }
+}
+@media (max-width: 910px) and (min-width: 320px) {
+    .galary__foto h1{
+        margin-top: 8%;  }
+    .prising__all{
+        display: flex;
+        justify-content: center;  }
+    .prising__all_field:last-child{
+        margin-right:1.7% ;  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+    form{
+        width:70%;
+        padding: 2% 6% 1% 0;
+        margin-top: 5%;  }
+    .services__current{
+        margin: 10% 0 10% 9%;  }
+    #story a{
+        margin-top: 2%; }
+    .prising__business li i em{
+        margin-top: -8%;  }
+}
+@media (max-width: 600px) and (min-width: 320px) {
+    #galary{
+        margin: 10% 0 10% 2%;}
+    .testimonial__foto{
+        margin-left: 0;  }
+    .prising__business li i em{
+        margin-top: -10%;  }
+}
+@media (max-width: 500px) and (min-width: 320px) {
+    .header__menu{
+        flex-wrap: wrap;}
+    .header__slogan--column p br{
+       display: none;  }
+    .prising__business li i em{
+        margin-top: -14%;  }
+}
+
+
